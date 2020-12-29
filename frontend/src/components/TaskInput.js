@@ -28,6 +28,15 @@ export default function TaskInput() {
     setList([...list, task])
   }
 
+   async function handleDeteleTask(id) {
+    const taskId = id;
+    await api.delete(`${taskId}`)
+
+    const newList = list.filter((task) => task.id !== taskId);
+    setList(newList)
+
+  }
+
   return (
     <>
       <div className="card">
@@ -35,6 +44,7 @@ export default function TaskInput() {
           <>
             <p>{task.taskDescription}</p>
             <p><b>{task.author}</b></p>
+            <button type="button" onClick={() => handleDeteleTask(task.id)}>Delete</button>
           </>
         ))}
       </div>
