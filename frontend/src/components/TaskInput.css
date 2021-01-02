@@ -10,3 +10,48 @@ body {
     font: 14px sans-serif;
     color: #333;
 }
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    width: 25vw;
+}
+
+.addButton {
+    width: 110px;
+    padding: 10px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 5%;
+    background-color: rgb(19, 137, 141);
+    color: white;
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    width: 50vw;
+    height: 100vh;
+    background-color: salmon;
+}
+
+.addTask {
+    display: flex;
+    flex-direction: column  ;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: springgreen;
+}
+
+.input {
+    margin-left: 10vw;
+}
