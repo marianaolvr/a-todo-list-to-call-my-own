@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import api from "../services/api";
+import './TaskInput.css';
 
 export default function TaskInput() {
   const [list, setList] = useState([]);
