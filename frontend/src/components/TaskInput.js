@@ -54,18 +54,12 @@ export default function TaskInput() {
       </div>
       <div className="addTask">
         <div className="input">
-          <label>
-            Task
-          <input
-              type="text"
-              onChange={(e) => setTaskDescription(e.target.value)}
-            />
-          </label>
 
-          <label>
-            Author
-          <input type="text" onChange={(e) => setAuthor(e.target.value)} />
-          </label>
+          <label for="task">TAREFA</label>
+          <input type="text" onChange={(e) => setTaskDescription(e.target.value)} id="task" />
+
+          <label for="author">AUTOR</label>
+          <input type="text" onChange={(e) => setAuthor(e.target.value)} id="author"/>
 
           <button type="button" className="addButton" onClick={handleAddTask}>
             Adicionar
