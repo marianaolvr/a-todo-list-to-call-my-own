@@ -43,16 +43,11 @@ input {
     flex-direction: row;
 }
 
-.list {
-    width: 50vw;
-    height: 100vh;
-}
-
 .addTask {
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-content: center;
     background-color: salmon;
@@ -84,6 +79,33 @@ input {
 /* tarefas */
 
 .card {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 244, 227);
+    border: solid 1px rgb(241, 171, 171);
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px;
+    width: 25vw;
+    box-shadow:2px 6px rgb(241, 171, 171);
+    margin: 25px 0;
 }
+
+.list {
+    width: 50vw;
+    height: 100vh;
+    padding: 0 13%;
+}
+
+
+#done-btn {
+    background-color: rgba(226, 185, 49, 0.555);
+    border: none;
+    border-radius: 3%;
+    height: 50%;
+    color: white;
+    padding: 2px 10px;
+    margin-top: 10px;
+}
+
 

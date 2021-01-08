@@ -38,17 +38,17 @@ export default function TaskInput() {
   return (
     <div className="content">
       <div className="list">
-        <div className="card">
+        <div>
           {list.map((task) => (
-            <>
+            <div className="card">
               <p>{task.taskDescription}</p>
               <p>
                 <b>{task.author}</b>
               </p>
-              <button type="button" onClick={() => handleDeteleTask(task.id)}>
-                Delete
+              <button type="button" id="done-btn"onClick={() => handleDeteleTask(task.id)}>
+                Concluir
               </button>
-            </>
+            </div>
           ))}
         </div>
       </div>
